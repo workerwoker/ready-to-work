@@ -1,5 +1,5 @@
 #!/bin/sh
-cd ${PWD}
+cd "$(dirname "$0")"
 now=`date "+%Y-%m-%d %H:%M:%S"`
 echo ${now} > README.md
 git add README.md
